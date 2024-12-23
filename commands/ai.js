@@ -22,7 +22,7 @@ module.exports = {
     }
 
     if (query === "QUI TA CRÉÉ " || query === "who created you?") {
-      const jokeMessage = "Ah c'est Stanley stawa Mickey avec Ql de 2568";
+      const jokeMessage = "Ah c'est Stanley stawa Mickey avec un Ql de 2568";
       const formattedMessage = useFontFormatting ? formatResponse(jokeMessage) : jokeMessage;
       return await sendMessage(senderId, { text: formattedMessage }, pageAccessToken);
     }
