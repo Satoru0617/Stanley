@@ -16,13 +16,13 @@ module.exports = {
     const query = args.join(" ").toLowerCase();
 
     if (!query) {
-      const defaultMessage = "HELLO AM LOVELY_AI READY TO ANSWER YOUR QUESTION ⁉️";
+      const defaultMessage = "Holà,En quoi puis vous aidez aujourd'hui ";
       const formattedMessage = useFontFormatting ? formatResponse(defaultMessage) : defaultMessage;
       return await sendMessage(senderId, { text: formattedMessage }, pageAccessToken);
     }
 
     if (query === "QUI TA CRÉÉ " || query === "who created you?") {
-      const jokeMessage = "KELVIN HIKARU";
+      const jokeMessage = "Ah c'est Stanley stawa Mickey avec Ql de 2568";
       const formattedMessage = useFontFormatting ? formatResponse(jokeMessage) : jokeMessage;
       return await sendMessage(senderId, { text: formattedMessage }, pageAccessToken);
     }
@@ -40,15 +40,15 @@ const handleChatResponse = async (senderId, input, pageAccessToken) => {
 
     const responseTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila', hour12: true });
 
-    const answeringMessage = `⏳ 𝗝𝘂𝘀𝘁 𝗪𝗮𝗶𝘁...`;
+    const answeringMessage = `⏳ Ah veuillez patienter je consulte Mickey ..`;
     const formattedAnsweringMessage = useFontFormatting ? formatResponse(answeringMessage) : answeringMessage;
     await sendMessage(senderId, { text: formattedAnsweringMessage }, pageAccessToken);
 
-    const defaultMessage = `LOVELY_AI 👸
+    const defaultMessage = `Stanley bot v4🤖
 
-👸|LOVELY_AI
+🤖|Mickey 
 ✅ Answer: ${response}
-▬▭▬ ▬▭▬✧▬▭▬ ▬▭▬
+Sta Stan stanl stanle stanley
 ⏰ Response: ${responseTime}`;
 
     const formattedMessage = useFontFormatting ? formatResponse(defaultMessage) : defaultMessage;
