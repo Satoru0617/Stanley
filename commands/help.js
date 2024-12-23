@@ -60,16 +60,16 @@ module.exports = {
 
     const helpMessage = `
 ━━━━━━━━━━━━━━
-🌟 Available Educational Commands:
+😁 Available Educational Commands:
 ╭─╼━━━━━━━━╾─╮
 ${educationalCommandsList || 'No educational commands available.'}
 ╰─━━━━━━━━━╾─╯
 
-🌟 Available Other Commands:
+👉 Available Other Commands:
 ╭─╼━━━━━━━━╾─╮
 ${otherCommandsList || 'No other commands available.'}
 ╰─━━━━━━━━━╾─╯
-📩 Type help [command name] to see command details.
+🙂 Type help [command name] to see command details.
 ━━━━━━━━━━━━━━`;
 
     sendMessage(senderId, { text: helpMessage }, pageAccessToken);
